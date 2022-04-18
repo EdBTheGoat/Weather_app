@@ -1,0 +1,12 @@
+body {
+	background: url(../images/weatherImage.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+.mainDiv {
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-content: center !important;
+	align-items: center !important;
+	position: relative;
+}

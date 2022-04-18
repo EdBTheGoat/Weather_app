@@ -1,0 +1,9 @@
+.mainDiv {
+	align-items: center;
+	width: 600px;
+}
+
+.search {
+	border-radius: 20px !important;
+	font-size: 15px !important;
+}

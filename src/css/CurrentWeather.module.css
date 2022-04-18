@@ -1,0 +1,7 @@
+.mainDiv {
+	display: flex;
+	flex-direction: row !important;
+	width: 900px !important;
+	height: 480px;
+	background-color: hsla(0, 0%, 100%, 0.2) !important;
+}
