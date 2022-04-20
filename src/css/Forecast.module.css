@@ -1,0 +1,25 @@
+.mainBox {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	align-content: center;
+}
+
+.boxes {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-evenly;
+	height: 130px;
+	width: 130px;
+	background-color: hsla(0, 0%, 100%, 0.3);
+	box-shadow: 3px 0 8px;
+	border-radius: 25px;
+	margin: 0 10px;
+	padding-bottom: 10px;
+}
+
+.tempNum {
+	font-size: 1.5rem;
+	font-weight: 600;
+}

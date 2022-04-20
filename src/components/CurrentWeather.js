@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../css/CurrentWeather.module.css';
+import weatherCode from './weatherCode';
 
 class CurrentWeather extends React.Component {
 	componentDidUpdate(prevProps) {
@@ -7,27 +8,30 @@ class CurrentWeather extends React.Component {
 		}
 	}
 
-	hello() {
+	weatherInfo() {
+		console.log(this.props.id);
 		return (
-			<div className={`${styles.mainDiv} ${'ui card'} `}>
-				<div className={styles.left}>
-					<div>Image</div>
-				</div>
-				<div className={styles.right}>
-					<div>Today</div>
-					<h2>
-						{this.props.city}, {this.props.country}
-					</h2>
-
-					<div>Temperature: {this.props.temp}</div>
-					<div>{this.props.weatherCondition}</div>
+			<div className={styles.mainDiv}>
+				<div className={styles.weatherInfo}>
+					<div className={styles.left}>
+						<div>{weatherCode(this.props.id)}</div>
+					</div>
+					<div className={styles.right}>
+						<div className={styles.topText}>Today</div>
+						<h2 className={styles.cityName}>
+							{this.props.city}, {this.props.country}
+						</h2>
+						<div className={styles.bottomText}>Temperature: {this.props.temp}</div>
+						<br />
+						<div className={styles.bottomText}>{this.props.weatherCondition}</div>
+					</div>
 				</div>
 			</div>
 		);
 	}
 
 	render() {
-		return <div>{this.props.city === '' ? '' : this.hello()}</div>;
+		return <div>{this.props.city === '' ? '' : this.weatherInfo()}</div>;
 	}
 
 	// console.log(cityInfo);

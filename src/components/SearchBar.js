@@ -12,7 +12,7 @@ class SearchBar extends React.Component {
 	render() {
 		return (
 			<div className={styles.mainDiv}>
-				<form onSubmit={this.onFormSubmit} className="ui form">
+				<form onSubmit={this.onFormSubmit}>
 					<div className="field">
 						<input
 							className={styles.search}

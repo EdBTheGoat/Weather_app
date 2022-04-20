@@ -3,10 +3,21 @@ body {
 	background-size: cover;
 }
 .mainDiv {
-	display: flex !important;
-	flex-direction: column !important;
-	justify-content: center !important;
-	align-content: center !important;
-	align-items: center !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 	position: relative;
+	height: 100vh;
+	margin: 0px auto;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
 }
