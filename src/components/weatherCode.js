@@ -3,16 +3,7 @@ import styles from '../css/weatherCode.module.css';
 
 const weatherCode = (id) => {
 	switch (id) {
-		case 200:
-		case 201:
-		case 202:
-		case 210:
-		case 211:
-		case 212:
-		case 221:
-		case 230:
-		case 231:
-		case 232:
+		case '11d':
 			return (
 				<div>
 					<img
@@ -23,35 +14,8 @@ const weatherCode = (id) => {
 					/>
 				</div>
 			);
-		case 300:
-		case 301:
-		case 302:
-		case 310:
-		case 311:
-		case 312:
-		case 313:
-		case 314:
-		case 321:
-			return (
-				<div>
-					<img
-						className={styles.weatherIcon}
-						alt="drizzle"
-						key="drizzle"
-						src={require('../images/drizzle.png')}
-					/>
-				</div>
-			);
-		case 500:
-		case 501:
-		case 502:
-		case 503:
-		case 504:
-		case 511:
-		case 520:
-		case 521:
-		case 522:
-		case 531:
+		case '10d':
+		case '09d':
 			return (
 				<div>
 					<img
@@ -62,32 +26,13 @@ const weatherCode = (id) => {
 					/>
 				</div>
 			);
-		case 600:
-		case 601:
-		case 602:
-		case 611:
-		case 612:
-		case 613:
-		case 615:
-		case 616:
-		case 620:
-		case 621:
-		case 622:
+		case '13d':
 			return (
 				<div>
 					<img alt="snow" key="snow" src={require('../images/snow.png')} />
 				</div>
 			);
-		case 701:
-		case 711:
-		case 721:
-		case 731:
-		case 741:
-		case 751:
-		case 761:
-		case 762:
-		case 771:
-		case 781:
+		case '50d':
 			return (
 				<div>
 					<img
@@ -98,7 +43,8 @@ const weatherCode = (id) => {
 					/>
 				</div>
 			);
-		case 800:
+		case '01d':
+		case '01n':
 			return (
 				<div>
 					<img
@@ -109,9 +55,10 @@ const weatherCode = (id) => {
 					/>
 				</div>
 			);
-		case 801:
-		case 802:
-		case 803:
+		case '02d':
+		case '02n':
+		case '03d':
+		case '03n':
 			return (
 				<div>
 					<img
@@ -122,7 +69,8 @@ const weatherCode = (id) => {
 					/>
 				</div>
 			);
-		case 804:
+		case '04d':
+		case '04n':
 			return (
 				<div>
 					<img
